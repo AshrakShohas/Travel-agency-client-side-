@@ -6,7 +6,7 @@ const AddPlaces = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post("http://localhost:5000/place", data)
+        axios.post("https://chilling-crypt-39330.herokuapp.com/place", data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Successfully added");

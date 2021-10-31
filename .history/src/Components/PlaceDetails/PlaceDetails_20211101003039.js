@@ -10,7 +10,7 @@ const PlaceDetails = () => {
     const { placeId } = useParams();
     const [places, setPlace] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/places/${placeId}`)
+        fetch(`https://chilling-crypt-39330.herokuapp.com/places/${placeId}`)
             .then(res => res.json())
             .then(data => setPlace(data))
     }, [])
